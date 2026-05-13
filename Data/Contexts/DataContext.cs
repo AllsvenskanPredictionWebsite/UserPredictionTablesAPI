@@ -7,5 +7,5 @@ public class DataContext(DbContextOptions<DataContext> options) : DbContext(opti
 {
     public DbSet<PredictionTableEntity> PredictionTables { get; set; }
     
-    public DbSet<TeamEntity> Teams { get; set; }
+    public DbSet<PredictionEntryEntity> PredictionEntries { get; set; }
 }
