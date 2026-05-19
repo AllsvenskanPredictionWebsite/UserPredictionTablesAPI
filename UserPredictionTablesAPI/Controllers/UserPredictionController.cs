@@ -1,10 +1,12 @@
 ﻿using Business.Models;
 using Business.Services;
 using Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace UserPredictionTablesAPI.Controllers;
 
+[Authorize]
 [Route("api/[controller]")]
 [ApiController]
 public class UserPredictionController : Controller
