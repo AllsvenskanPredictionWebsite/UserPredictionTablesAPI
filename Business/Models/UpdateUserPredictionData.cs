@@ -8,5 +8,5 @@ public class UpdateUserPredictionData
     
     public string UserId { get; set; }
     
-    public ICollection<TeamEntity> Teams { get; set; }
+    public ICollection<PredictionEntryEntity> Entries { get; set; }
 }

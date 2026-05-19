@@ -9,5 +9,5 @@ public class PredictionTableEntity
     
     public string UserId { get; set; }
     
-    public ICollection<TeamEntity> Teams { get; set; }
+    public ICollection<PredictionEntryEntity> Entries { get; set; } = new List<PredictionEntryEntity>();
 }

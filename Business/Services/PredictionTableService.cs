@@ -16,7 +16,7 @@ public class PredictionTableService(IPredictionTableRepository predictionTableRe
         var entity = new PredictionTableEntity
         {
             UserId = data.UserId,
-            Teams = data.Teams
+            Entries = data.Entries
         };
         
         var result = await _predictionTableRepository.AddAsync(entity);
@@ -33,7 +33,7 @@ public class PredictionTableService(IPredictionTableRepository predictionTableRe
             {
                 PredictionId =  entity.PredictionId,
                 UserId = entity.UserId,
-                Teams = entity.Teams
+                Entries = entity.Entries
             };
     }
 
@@ -46,7 +46,7 @@ public class PredictionTableService(IPredictionTableRepository predictionTableRe
         {
             PredictionId = data.PredictionId,
             UserId = data.UserId,
-            Teams = data.Teams
+            Entries = data.Entries
         };
         
         var result = await _predictionTableRepository.UpdateAsync(entity);
